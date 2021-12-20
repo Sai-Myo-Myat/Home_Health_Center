@@ -16,18 +16,21 @@ body {
 .container {
     padding: 0;
     margin: 0;
-    width: 100vw;
 }
 
 nav {
     background-color: #D7E9F7;
     padding: 10px;
-    width: 100%;
+
 }
 
 ul {
-    width: 150px;
     padding: 0;
+}
+
+.Logo {
+    font-size: 36px;
+    width: 100%;
 }
 
 ul li {
@@ -133,4 +136,32 @@ span {
 /* third page */
 .thirdPage {
     display: none;
+}
+
+.doctorToBeBooked {
+    color: #f3c277;
+}
+
+.formTag {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #90caf6;
+    width: 50%;
+    height: 50vh;
+    padding: 10px;
+}
+
+.formTag input {
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #eea334;
+}
+
+.formTag label {
+    color: white;
+    cursor: pointer;
 }

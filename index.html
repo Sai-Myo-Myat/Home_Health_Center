@@ -17,7 +17,7 @@
     <div class="container">
         <nav>
             <ul>
-                <li><i class="fas fa-h-square"></i> Home </li>
+                <li class="Logo"><i class="fas fa-h-square"></i> Home </li>
             </ul> 
         </nav>
 
@@ -34,10 +34,10 @@
             <div class="secondPageOne page">
                 <h1 class="headerText" >They are <span>Dentist</span> for tomorrow...</h1>
                 <ul class="dutyDoctors">
-                    <li><input type="radio" name="Dentist" id="Dr.John">
+                    <li class="doctorList" id="Dr.John , 8:00AM - 11:30AM"><input type="radio" name="Dentist" id="Dr.John">
                         <label for="Dr.John"> Dr.John <span>(8:00AM - 11:30AM)</span></label>
                     </li>
-                    <li><input type="radio" name="Dentist" id="Dr.Jame">
+                    <li class="doctorList" id="Dr.Jame , 2:00PM - 5:30PM"><input type="radio" name="Dentist" id="Dr.Jame">
                         <label for="Dr.Jame"> Dr.Jame <span>(2:00PM - 5:30PM)</span></label>
                     </li>
                 </ul>
@@ -46,10 +46,10 @@
             <div class="secondPageTwo page">
                 <h1 class="headerText" >They are <span>Eye-specialist</span> for tomorrow...</h1>
                 <ul class="dutyDoctors">
-                    <li><input type="radio" name="Eye-specialist" id="Dr.luke">
+                    <li class="doctorList" id="Dr.luke , 8:00AM - 11:30AM"><input type="radio" name="Eye-specialist" id="Dr.luke">
                         <label for="Dr.luke"> Dr.luke <span>(8:00AM - 11:30AM)</span></label>
                     </li>
-                    <li><input type="radio" name="Eye-specialist" id="Dr.Amanda">
+                    <li class="doctorList" id="Dr.Amanda , 2:00PM - 5:30PM"><input type="radio" name="Eye-specialist" id="Dr.Amanda">
                         <label for="Dr.Amanda"> Dr.Amanda <span>(2:00PM - 5:30PM)</span></label>
                     </li>
                 </ul>
@@ -57,11 +57,11 @@
             <div class="secondPageThree page">
                 <h1 class="headerText" >They are <span>General-doctors</span> for tomorrow...</h1>
                 <ul class="dutyDoctors">
-                    <li><input type="radio" name="General-doctors" id="Dr.Hewi">
-                        <label for="Dr.Hewi"> Dr.Hewi <span>(8:00AM - 11:30AM)</span></label>
+                    <li class="doctorList" id="Dr.Hewi , 8:00AM - 11:30AM"><input type="radio" name="General-doctors" id="Dr.Hew">
+                        <label for="Dr.Hew"> Dr.Hewi <span>(8:00AM - 11:30AM)</span></label>
                     </li>
-                    <li><input type="radio" name="General-doctors" id="Dr.Aaron">
-                        <label for="Dr.Aaron"> Dr.Aaron <span>(2:00PM - 5:30PM)</span></label>
+                    <li class="doctorList" id="Dr.Aaron, 2 :00PM - 5:30PM"><input type="radio" name="General-doctors" id="Dr.Aaro">
+                        <label for="Dr.Aaro"> Dr.Aaron <span>(2:00PM - 5:30PM)</span></label>
                     </li>
                 </ul>
             </div>
@@ -71,6 +71,16 @@
         </div>
 
         <div class="thirdPage page">
+            <h2 class="headerText">Make an Appointment With <span class="doctorToBeBooked"></span></h2>
+            <form class="formTag" action="">
+                <label for="Name">Name</label>
+                <input type="text" id="Name" class="name" autofocus>
+                <label for="phoneNo">Phone Number</label>
+                <input type="text" id="phoneNo" class="phoneNumber">
+                <label for="time">Time</label>
+                <input type="time" name="" id="time">
+            </form>
+            <button class="btn">Done</button>
         </div>
 
     <script src="script.js"></script>
