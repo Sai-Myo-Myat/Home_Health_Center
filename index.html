@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,500;1,900&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/b25adae401.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Health-center Booking App</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><i class="fas fa-h-square"></i> Home </li>
+            </ul> 
+        </nav>
+
+        <div class="firstPage page">
+            <h1 class="headerText" >What is your health problem and Who Do you want to meet?</h1>
+            <div class="Doctors">
+                <div class="Doctor">Dentist</div>
+                <div class="Doctor">Eye Specialist</div>
+                <div class="Doctor">General</div>
+            </div>
+        </div>
+
+        <div class="secondPage page">
+            <div class="secondPageOne page">
+                <h1 class="headerText" >They are <span>Dentist</span> for tomorrow...</h1>
+                <ul class="dutyDoctors">
+                    <li><input type="radio" name="Dentist" id="Dr.John">
+                        <label for="Dr.John"> Dr.John <span>(8:00AM - 11:30AM)</span></label>
+                    </li>
+                    <li><input type="radio" name="Dentist" id="Dr.Jame">
+                        <label for="Dr.Jame"> Dr.Jame <span>(2:00PM - 5:30PM)</span></label>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="secondPageTwo page">
+                <h1 class="headerText" >They are <span>Eye-specialist</span> for tomorrow...</h1>
+                <ul class="dutyDoctors">
+                    <li><input type="radio" name="Eye-specialist" id="Dr.luke">
+                        <label for="Dr.luke"> Dr.luke <span>(8:00AM - 11:30AM)</span></label>
+                    </li>
+                    <li><input type="radio" name="Eye-specialist" id="Dr.Amanda">
+                        <label for="Dr.Amanda"> Dr.Amanda <span>(2:00PM - 5:30PM)</span></label>
+                    </li>
+                </ul>
+            </div>
+            <div class="secondPageThree page">
+                <h1 class="headerText" >They are <span>General-doctors</span> for tomorrow...</h1>
+                <ul class="dutyDoctors">
+                    <li><input type="radio" name="General-doctors" id="Dr.Hewi">
+                        <label for="Dr.Hewi"> Dr.Hewi <span>(8:00AM - 11:30AM)</span></label>
+                    </li>
+                    <li><input type="radio" name="General-doctors" id="Dr.Aaron">
+                        <label for="Dr.Aaron"> Dr.Aaron <span>(2:00PM - 5:30PM)</span></label>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="next btn">Next</button>
+    
+        </div>
+
+        <div class="thirdPage page">
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
