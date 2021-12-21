@@ -60,7 +60,7 @@
                     <li class="doctorList" id="Dr.Hewi , 8:00AM - 11:30AM"><input type="radio" name="General-doctors" id="Dr.Hew">
                         <label for="Dr.Hew"> Dr.Hewi <span>(8:00AM - 11:30AM)</span></label>
                     </li>
-                    <li class="doctorList" id="Dr.Aaron, 2 :00PM - 5:30PM"><input type="radio" name="General-doctors" id="Dr.Aaro">
+                    <li class="doctorList" id="Dr.Aaron , 2:00PM - 5:30PM"><input type="radio" name="General-doctors" id="Dr.Aaro">
                         <label for="Dr.Aaro"> Dr.Aaron <span>(2:00PM - 5:30PM)</span></label>
                     </li>
                 </ul>
@@ -74,13 +74,17 @@
             <h2 class="headerText">Make an Appointment With <span class="doctorToBeBooked"></span></h2>
             <form class="formTag" action="">
                 <label for="Name">Name</label>
-                <input type="text" id="Name" class="name" autofocus>
+                <input  type="text" id="Name" class="name" autofocus>
                 <label for="phoneNo">Phone Number</label>
                 <input type="text" id="phoneNo" class="phoneNumber">
                 <label for="time">Time</label>
-                <input type="time" name="" id="time">
+                <div class="time" id="time">Hour / Minutes <i class="far fa-clock"></i></div>
             </form>
             <button class="btn">Done</button>
+        </div>
+
+        <div class="timeTable">
+            
         </div>
 
     <script src="script.js"></script>

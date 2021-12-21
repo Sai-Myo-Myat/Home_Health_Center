@@ -152,16 +152,53 @@ span {
     padding: 10px;
 }
 
-.formTag input {
+.formTag input ,.time {
     padding: 10px 15px;
     outline: none;
     border: none;
     border-radius: 10px;
     font-size: 16px;
-    color: #eea334;
+    color: #e29e38;
 }
 
 .formTag label {
     color: white;
     cursor: pointer;
+}
+
+.time {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.fa-clock {
+    font-size: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #75c1fb;
+    color: #F9F3DF;
+}
+
+table, tr, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #90caf6;
+}
+
+.ok {
+    bottom: 20%;
 }

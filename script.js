@@ -8,6 +8,8 @@ const thirdPage = document.querySelector('.thirdPage');
 const nextBtn = document.querySelector(".next");
 const doctorList = document.querySelectorAll('.doctorList');
 const doctorToBeBooked = document.querySelector('.doctorToBeBooked');
+const time = document.querySelector('.time');
+const timeTable = document.querySelector('.timeTable');
 
 //array
 const rightChoice = [];      // --> to make sure that user choose a doctor
@@ -44,6 +46,45 @@ nextBtn.addEventListener('click', () => {
 const takingDoctorName = () => {
     doctorToBeBooked.innerHTML = rightDoctor;
 }
+
+//time 
+const forAM = ["8:00 - 8:30","8:30 - 9:00","9:00 - 9:30","9:30 - 10:00","10:00 - 10:30","10:30 - 11:00","11:00 - 11:30"]
+const forPM = ["2:00 - 2:30","2:30 - 3:00","3:00 - 3:30","3:30 - 4:00","4:00 - 4:30","4:30 - 5:00","5:00 - 5:30"]
+const makeTimeTable = (meridien) => {
+        const table = `
+        <table>
+        <tr>
+            <td>${meridien[0]}</td>
+            <td>${meridien[1]}</td>
+            <td>${meridien[2]}</td>
+        </tr>
+        <tr>
+            <td>${meridien[3]}</td>
+            <td>${meridien[4]}</td>
+            <td>${meridien[5]}</td>
+        </tr>
+        <tr>
+            <td>${meridien[6]}</td>
+        </tr>
+    </table> 
+    <button class="ok btn">Done</button>
+    `
+    timeTable.innerHTML = table;
+}
+
+//making time table
+time.addEventListener('click', () => {
+    const amAndPm = rightDoctor[0];
+    const amOrPm = amAndPm.split(',');
+    console.log(amOrPm[1]);
+    // amOrPm[1] === "8:00AM - 11:30AM" ? makeTimeTable(forAM) : makeTimeTable(forPM);
+    if(amOrPm[1] === " 2:00PM - 5:30PM"){
+        makeTimeTable(forPM);
+    }else if(amOrPm[1] === " 8:00AM - 11:30AM") {
+        makeTimeTable(forAM)
+    }
+    thirdPage.style.display = "none";
+})
 
 //time validation , time limit
 const currentYear = new Date().getFullYear();
